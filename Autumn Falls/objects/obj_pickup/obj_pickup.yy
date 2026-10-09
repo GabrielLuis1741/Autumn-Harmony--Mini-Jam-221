@@ -9,7 +9,10 @@
     "name":"pickup_objects",
     "path":"folders/Objects/pickup_objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"par_wall",
+    "path":"objects/par_wall/par_wall.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -27,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_platform_template",
+    "path":"sprites/spr_platform_template/spr_platform_template.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

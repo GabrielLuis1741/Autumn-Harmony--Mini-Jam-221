@@ -1,1 +1,0 @@
-draw_sprite_ext(spr_player_idle, -1, x, y, 1,1, angle, -1, 1)

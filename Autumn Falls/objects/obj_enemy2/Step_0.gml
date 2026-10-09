@@ -15,6 +15,8 @@ if (place_meeting(x+hspd, y, par_wall)) {
 x += hspd;
 
 // Vertical collisions 
+
+	
 if (place_meeting(x, y+vspd, par_wall)) {
 	while(!place_meeting(x, y+sign(vspd), par_wall)){
 		y += sign(vspd);
@@ -22,6 +24,7 @@ if (place_meeting(x, y+vspd, par_wall)) {
 	vspd = 0;
 	
 }
+
 y += vspd;
 
 // attack related (pulled from enemy 1)
