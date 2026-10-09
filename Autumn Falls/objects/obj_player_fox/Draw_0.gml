@@ -1,0 +1,1 @@
+//draw_sprite_ext(squirrel sprite, -1, x, y, 1,1, angle, -1, 1)
