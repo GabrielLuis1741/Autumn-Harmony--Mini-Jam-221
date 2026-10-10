@@ -7,7 +7,7 @@ emp_bullet_key = ord("Q");
 // Character orientation and sprite details
 
 direction = 1;
-sprite_index = spr_fox_template;
+sprite_index = spr_fox_sleep;
 
 // Movement
 move_x = 0;

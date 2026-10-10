@@ -31,6 +31,18 @@ if (!place_meeting(x, y + vsp, par_wall)) {
     vsp = 0;
 }
 
+//sprite animation index
+
+if (keyboard_check(right_key)){
+	sprite_index = spr_fox_run_right;	
+} else if (keyboard_check(left_key)){
+	sprite_index = spr_fox_run_left;	
+} else if (keyboard_check_released(right_key)){
+	sprite_index = spr_fox_idle_right;
+}else if (keyboard_check_released(left_key)){
+	sprite_index = spr_fox_idle_left;
+}
+
 // Lose condition
 if (player_hp <= 0) {
     room_goto(rm_end_game);

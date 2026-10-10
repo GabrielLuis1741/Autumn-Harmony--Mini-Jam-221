@@ -59,6 +59,9 @@ if (keyboard_check(right_key)){
 	sprite_index = spr_squirrel_idle_left;
 }
 
+
+//win condition
+
 // Lose condition
 if (player_hp <= 0) {
     room_goto(rm_end_game);

@@ -27,6 +27,11 @@ dash_cooldown = 0;
 dash_speed = 12;
 dash_dir = 1;
 
+//leaf and stick objectives
+global.leaf_counter = 0;
+global.stick_counter = 0;
+
+
 p_hit = function(_id, _damage) {
     player_hp -= _damage;
     invincible = 1;

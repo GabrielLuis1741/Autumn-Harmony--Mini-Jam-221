@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_fox_template",
-    "path":"sprites/spr_fox_template/spr_fox_template.yy",
+    "name":"spr_fox_sleep",
+    "path":"sprites/spr_fox_sleep/spr_fox_sleep.yy",
   },
   "spriteMaskId":null,
   "visible":true,

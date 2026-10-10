@@ -1,4 +1,4 @@
-timer = 60* 3;
+timer = 200;
 
 alarm[1] = room_speed * timer;
 

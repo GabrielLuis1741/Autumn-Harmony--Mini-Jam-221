@@ -1,9 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_pickup",
-  "eventList":[],
+  "%Name":"obj_pickup_stick",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player_squirrel","path":"objects/obj_player_squirrel/obj_player_squirrel.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_pickup",
+  "name":"obj_pickup_stick",
   "overriddenProperties":[],
   "parent":{
     "name":"pickup_objects",
@@ -31,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_leaf",
-    "path":"sprites/spr_leaf/spr_leaf.yy",
+    "name":"spr_stick",
+    "path":"sprites/spr_stick/spr_stick.yy",
   },
   "spriteMaskId":null,
   "visible":true,
