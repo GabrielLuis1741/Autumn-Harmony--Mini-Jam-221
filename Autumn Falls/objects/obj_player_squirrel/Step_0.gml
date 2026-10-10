@@ -60,8 +60,6 @@ if (keyboard_check(right_key)){
 }
 
 
-//win condition
-
 // Lose condition
 if (player_hp <= 0) {
     room_goto(rm_end_game);
