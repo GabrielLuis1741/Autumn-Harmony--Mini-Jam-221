@@ -1,1 +1,0 @@
-draw_sprite_ext(spr_fox_template, -1, x, y, 1,1, 0, -1, 1)

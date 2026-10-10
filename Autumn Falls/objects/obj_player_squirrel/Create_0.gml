@@ -4,6 +4,12 @@ up_key = ord("W");
 down_key = ord("S");
 emp_bullet_key = ord("Q");
 
+// Character orientation and sprite details
+
+direction = 1;
+sprite_index = spr_squirrel_idle_right;
+
+
 // Movement
 move_x = 0;
 vsp = 0;            // replaces built-in vspeed
