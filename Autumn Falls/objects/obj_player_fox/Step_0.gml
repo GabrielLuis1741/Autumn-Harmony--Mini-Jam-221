@@ -93,7 +93,7 @@ if (mouse_check_button(mb_right)) {
 		
         var facing = 1; 
         
-		alarm_set(0, 30);
+		alarm_set(0, 20);
 		
         if (keyboard_check(left_key) || 
             sprite_index == spr_fox_run_left || 
@@ -118,7 +118,7 @@ if (mouse_check_button(mb_right)) {
         }
 		
        
-        var s = instance_create_depth(x + (facing * 35), y, -1000, Object30);
+        var s = instance_create_depth(x + (facing * 35), y, -1000, obj_foxbite);
         
         s.image_xscale = facing; 
 		audio_play_sound(snd_slash, 0, false);
@@ -128,7 +128,7 @@ if (mouse_check_button(mb_right)) {
 
 // Tailswipe
 
-if (mouse_check_button(mb_right)) {
+if (mouse_check_button(mb_left)) {
 	if (fire_cooldown <= 0) {
 		
         var facing = 1; 
@@ -140,7 +140,7 @@ if (mouse_check_button(mb_right)) {
             sprite_index == spr_fox_idle_left || 
             sprite_index == spr_fox_jump_left) 
         {
-			sprite_index = spr_fox_bite_left;
+			sprite_index = spr_fox_tailswipe_left;
             facing = -1;
 			
         }
@@ -152,13 +152,13 @@ if (mouse_check_button(mb_right)) {
             sprite_index == spr_fox_idle_right || 
             sprite_index == spr_fox_jump_right) 
         {
-			sprite_index = spr_fox_bite_right;
+			sprite_index = spr_fox_tailswipe_right;
 			facing = 1;
     
         }
 		
        
-        var s = instance_create_depth(x + (facing * 35), y, -1000, Object30);
+        var s = instance_create_depth(x + (facing), y, -1001, obj_tailswipe);
         
         s.image_xscale = facing; 
 		audio_play_sound(snd_slash, 0, false);
