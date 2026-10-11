@@ -36,3 +36,8 @@ p_hit = function(_id, _damage) {
     player_hp -= _damage;
     invincible = 1;
 };
+
+
+timer = 20;
+
+alarm[1] = room_speed * timer;

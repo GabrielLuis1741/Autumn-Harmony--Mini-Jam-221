@@ -68,3 +68,8 @@ if (player_hp <= 0) {
     room_goto(rm_end_game);
 	
 }
+
+if (timer > 0) {
+  
+    timer -= delta_time / 1000000; 
+}

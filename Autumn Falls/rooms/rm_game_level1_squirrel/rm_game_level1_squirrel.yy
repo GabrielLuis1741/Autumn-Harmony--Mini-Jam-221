@@ -4054,6 +4054,7 @@
     {"name":"inst_766548CB","path":"rooms/rm_game_level1_squirrel/rm_game_level1_squirrel.yy",},
     {"name":"inst_66848851","path":"rooms/rm_game_level1_squirrel/rm_game_level1_squirrel.yy",},
     {"name":"inst_3BD388D7","path":"rooms/rm_game_level1_squirrel/rm_game_level1_squirrel.yy",},
+    {"name":"inst_1ADF60CD","path":"rooms/rm_game_level1_squirrel/rm_game_level1_squirrel.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -8117,6 +8118,7 @@
         {"$GMRInstance":"v4","%Name":"inst_766548CB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_766548CB","objectId":{"name":"obj_enemy_water","path":"objects/obj_enemy_water/obj_enemy_water.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2240.0,"y":704.0,},
         {"$GMRInstance":"v4","%Name":"inst_66848851","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_66848851","objectId":{"name":"obj_surface","path":"objects/obj_surface/obj_surface.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":5920.0,"y":960.0,},
         {"$GMRInstance":"v4","%Name":"inst_3BD388D7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3BD388D7","objectId":{"name":"obj_surface","path":"objects/obj_surface/obj_surface.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":5888.0,"y":960.0,},
+        {"$GMRInstance":"v4","%Name":"inst_1ADF60CD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1ADF60CD","objectId":{"name":"obj_surface","path":"objects/obj_surface/obj_surface.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":288.0,"y":256.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets_cave","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_7914009D","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_7914009D","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_winter_block_71","path":"sprites/spr_winter_block_71/spr_winter_block_71.yy",},"x":32.0,"y":832.0,},
