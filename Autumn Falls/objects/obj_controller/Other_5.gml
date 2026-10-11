@@ -1,1 +1,1 @@
-audio_stop_sound(snd_bludsuckas);
+audio_stop_sound(snd_autumnHarmony_winter);
