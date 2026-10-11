@@ -82,14 +82,17 @@ if (move_x != 0) {
 // Combat
 
 // Cooldown countdown
-if (fire_cooldown > 0) {
-    fire_cooldown -= 1;
+if (fire_bite_cooldown > 0) {
+    fire_bite_cooldown -= 1;
+}
+if (fire_tail_cooldown > 0) {
+    fire_tail_cooldown -= 1;
 }
 
 // Bite (Repurposed from obj_slash)
 
 if (mouse_check_button(mb_right)) {
-	if (fire_cooldown <= 0) {
+	if (fire_bite_cooldown <= 0) {
 		
         var facing = 1; 
         
@@ -122,14 +125,14 @@ if (mouse_check_button(mb_right)) {
         
         s.image_xscale = facing; 
 		audio_play_sound(snd_slash, 0, false);
-		fire_cooldown = fire_cooldown_max;
+		fire_bite_cooldown = fire_cooldown_bite_max;
 	}
 }
 
 // Tailswipe
 
 if (mouse_check_button(mb_left)) {
-	if (fire_cooldown <= 0) {
+	if (fire_tail_cooldown <= 0) {
 		
         var facing = 1; 
         
@@ -162,7 +165,7 @@ if (mouse_check_button(mb_left)) {
         
         s.image_xscale = facing; 
 		audio_play_sound(snd_slash, 0, false);
-		fire_cooldown = fire_cooldown_max;
+		fire_tail_cooldown = fire_cooldown_tail_max;
 	}
 }
 

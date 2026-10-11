@@ -18,12 +18,14 @@ mspeed = 3;
 
 
 // Health
-player_hp = 50;
+player_hp = 18;
 invincible = 0;
 
 // Bite cooldown
-fire_cooldown = 0;
-fire_cooldown_max = 100;
+fire_bite_cooldown = 0;
+fire_tail_cooldown = 0;
+fire_cooldown_bite_max = 67;
+fire_cooldown_tail_max = 80;
 
 p_hit = function(_id, _damage) {
     player_hp -= _damage;

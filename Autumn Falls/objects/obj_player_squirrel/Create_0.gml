@@ -18,7 +18,7 @@ jump_speed = 4.05;  // was jspeed (1.35) * mspeed (3)
 mspeed = 3;
 
 // Health
-player_hp = 50;
+player_hp = 3;
 invincible = 0;
 
 // Dash

@@ -1,4 +1,4 @@
 // Inherit the parent event
 event_inherited();
 
-room_goto(rm_game_level1);
+room_goto(rm_game_level1_squirrel);

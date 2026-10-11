@@ -1,2 +1,2 @@
 effect_create_above(ef_ring, x, y, 1, c_maroon);
-room_goto(rm_game_level2);
+room_goto(rm_game_level1_fox);
