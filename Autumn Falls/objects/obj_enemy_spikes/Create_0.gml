@@ -1,8 +1,8 @@
 //Variables for pathing
 
 dir = -1;
-move = 0.9;
-grav = 0.2;
+move = 0;
+grav = 0;
 hspd = 0;
 vspd = 0;
 

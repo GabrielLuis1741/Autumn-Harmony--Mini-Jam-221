@@ -27,7 +27,3 @@ if (place_meeting(x, y+vspd, par_wall)) {
 
 y += vspd;
 
-// attack related (pulled from enemy 1)
-if (attackcount < attacktime) {
-    attackcount++;
-}

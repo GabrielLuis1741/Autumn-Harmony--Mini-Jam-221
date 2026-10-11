@@ -11,7 +11,7 @@ dash_timer = max(dash_timer - 1, 0);
 
 if (keyboard_check_pressed(vk_shift) && dash_cooldown <= 0) {
     dash_timer = 8;
-    dash_cooldown = 30;
+    dash_cooldown = 60;
     dash_dir = (move_x != 0) ? sign(move_x) : sign(image_xscale);
 }
 
@@ -66,4 +66,5 @@ if (keyboard_check(right_key)){
 // Lose condition
 if (player_hp <= 0) {
     room_goto(rm_end_game);
+	
 }

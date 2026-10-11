@@ -1,5 +1,5 @@
 //Variables for pathing
-damage = 3;
+damage = 50;
 dir = -1;
 move = 0;
 grav = 0;
@@ -32,7 +32,6 @@ s_hit = function(_id, _damage) {
 
 //attack relevant variables (pulled from enemy 1)
 attackcount = 0
-attacktime = room_speed * 1.2;
 hp = 10;
 
 
