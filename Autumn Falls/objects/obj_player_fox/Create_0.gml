@@ -21,6 +21,9 @@ mspeed = 3;
 player_hp = 50;
 invincible = 0;
 
+// Bite cooldown
+fire_cooldown = 0;
+fire_cooldown_max = 20;
 
 p_hit = function(_id, _damage) {
     player_hp -= _damage;

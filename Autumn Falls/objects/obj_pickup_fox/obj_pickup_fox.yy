@@ -13,8 +13,8 @@
     "path":"folders/Objects/pickup_objects.yy",
   },
   "parentObjectId":{
-    "name":"par_wall",
-    "path":"objects/par_wall/par_wall.yy",
+    "name":"par_bullet_collisions",
+    "path":"objects/par_bullet_collisions/par_bullet_collisions.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

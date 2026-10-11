@@ -1,5 +1,5 @@
-image_xscale = 3.2;
-image_yscale = 3.2;
+image_xscale = 4.0;
+image_yscale = 4.0;
 
 // Input
 move_x = keyboard_check(right_key) - keyboard_check(left_key);
@@ -33,6 +33,8 @@ if (!place_meeting(x, y + vsp, par_wall)) {
     }
     vsp = 0;
 }
+
+
 
 //sprite animation index
 
@@ -75,6 +77,43 @@ else if (on_ground){
 		sprite_index = spr_fox_idle_left;
 	}
 }
+
+// Direction Tracking (Forces direction to update instantly while running)
+if (move_x != 0) {
+    direction = move_x; // If moving right, direction = 1. If moving left, direction = -1.
+}
+
+// Combat
+
+// Cooldown countdown
+if (fire_cooldown > 0) {
+    fire_cooldown -= 1;
+}
+
+// Bite (Repurposed from obj_slash)
+
+if (mouse_check_button(mb_right)) {
+	if (fire_cooldown <= 0) {
+		
+        var facing = 1; 
+        
+        if (keyboard_check(left_key) || 
+            sprite_index == spr_fox_run_left || 
+            sprite_index == spr_fox_idle_left || 
+            sprite_index == spr_fox_jump_left) 
+        {
+            facing = -1;
+        }
+
+       
+        var s = instance_create_depth(x + (facing * 35), y, -1000, obj_bite);
+        
+        s.image_xscale = facing; 
+		audio_play_sound(snd_slash, 0, false);
+		fire_cooldown = fire_cooldown_max;
+	}
+}
+
 // Lose condition
 if (player_hp <= 0) {
     room_goto(rm_end_game);

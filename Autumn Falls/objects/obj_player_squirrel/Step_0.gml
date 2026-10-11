@@ -1,3 +1,6 @@
+image_xscale = 2.2;
+image_yscale = 2.2;
+
 // Input
 move_x = keyboard_check(right_key) - keyboard_check(left_key);
 var on_ground = place_meeting(x, y + 1, par_wall);
