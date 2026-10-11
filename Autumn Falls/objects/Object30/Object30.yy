@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_slash",
-    "path":"sprites/spr_slash/spr_slash.yy",
+    "name":"Sprite66",
+    "path":"sprites/Sprite66/Sprite66.yy",
   },
   "spriteMaskId":null,
   "visible":true,

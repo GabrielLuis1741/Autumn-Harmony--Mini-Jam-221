@@ -71,11 +71,7 @@ else if (on_ground){
 	} else if (keyboard_check_released(left_key)){
 		direction = -1;
 		sprite_index = spr_fox_idle_left;
-	} else if (direction == 1){
-		sprite_index = spr_fox_idle_right;
-	} else if (direction == -1){
-		sprite_index = spr_fox_idle_left;
-	}
+	} 
 }
 
 // Direction Tracking (Forces direction to update instantly while running)
@@ -97,13 +93,16 @@ if (mouse_check_button(mb_right)) {
 		
         var facing = 1; 
         
+		alarm_set(0, 30);
+		
         if (keyboard_check(left_key) || 
             sprite_index == spr_fox_run_left || 
             sprite_index == spr_fox_idle_left || 
             sprite_index == spr_fox_jump_left) 
         {
-			sprite_index = spr_fox_bite_right_1;
+			sprite_index = spr_fox_bite_left;
             facing = -1;
+			
         }
 		
 		// if facing right, right directed bite animation. 
@@ -113,9 +112,9 @@ if (mouse_check_button(mb_right)) {
             sprite_index == spr_fox_idle_right || 
             sprite_index == spr_fox_jump_right) 
         {
-			sprite_index = spr_fox_idle_right_1;
+			sprite_index = spr_fox_bite_right;
 			facing = 1;
-            
+    
         }
 		
        
@@ -126,6 +125,47 @@ if (mouse_check_button(mb_right)) {
 		fire_cooldown = fire_cooldown_max;
 	}
 }
+
+// Tailswipe
+
+if (mouse_check_button(mb_right)) {
+	if (fire_cooldown <= 0) {
+		
+        var facing = 1; 
+        
+		alarm_set(0, 30);
+		
+        if (keyboard_check(left_key) || 
+            sprite_index == spr_fox_run_left || 
+            sprite_index == spr_fox_idle_left || 
+            sprite_index == spr_fox_jump_left) 
+        {
+			sprite_index = spr_fox_bite_left;
+            facing = -1;
+			
+        }
+		
+		// if facing right, right directed bite animation. 
+		//Prob getting cancelled out by idle, run or jump from ground animations
+		if (keyboard_check(right_key) || 
+            sprite_index == spr_fox_run_right || 
+            sprite_index == spr_fox_idle_right || 
+            sprite_index == spr_fox_jump_right) 
+        {
+			sprite_index = spr_fox_bite_right;
+			facing = 1;
+    
+        }
+		
+       
+        var s = instance_create_depth(x + (facing * 35), y, -1000, Object30);
+        
+        s.image_xscale = facing; 
+		audio_play_sound(snd_slash, 0, false);
+		fire_cooldown = fire_cooldown_max;
+	}
+}
+
 
 // Lose condition
 if (player_hp <= 0) {
