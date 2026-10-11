@@ -29,7 +29,7 @@
   "origin":0,
   "parent":{
     "name":"Pickup Sprites",
-    "path":"folders/Sprites/Pickup Sprites.yy",
+    "path":"folders/Pickup Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
