@@ -46,7 +46,7 @@
   "origin":0,
   "parent":{
     "name":"Pickup Sprites",
-    "path":"folders/Pickup Sprites.yy",
+    "path":"folders/Sprites/Pickup Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
