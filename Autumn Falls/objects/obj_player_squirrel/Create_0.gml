@@ -40,6 +40,6 @@ p_hit = function(_id, _damage) {
 };
 
 
-timer = 165;
+timer = 100;
 
 alarm[1] = room_speed * timer;

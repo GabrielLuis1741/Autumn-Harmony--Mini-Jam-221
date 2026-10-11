@@ -3,3 +3,5 @@
 	other.p_hit(id, damage);
 	attackcount = 0;	
 }
+
+

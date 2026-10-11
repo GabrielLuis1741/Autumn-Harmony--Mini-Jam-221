@@ -31,3 +31,10 @@ y += vspd;
 if (attackcount < attacktime) {
     attackcount++;
 }
+
+if dir == -1 {
+	sprite_index = spr_enemy_wolf_idle_left;
+}
+else if dir == 1 {
+	sprite_index = spr_enemy_wolf_idle_right;
+}

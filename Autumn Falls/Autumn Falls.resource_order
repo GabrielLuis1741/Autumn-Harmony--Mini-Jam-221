@@ -1,4 +1,8 @@
 {
   "FolderOrderSettings":[],
-  "ResourceOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"spr_enemy_wolf_attack_left","order":3,"path":"sprites/spr_enemy_wolf_attack_left/spr_enemy_wolf_attack_left.yy",},
+    {"name":"spr_enemy_wolf_attack_right_00","order":2,"path":"sprites/spr_enemy_wolf_attack_right_00/spr_enemy_wolf_attack_right_00.yy",},
+    {"name":"spr_enemy_wolf_idle_left","order":1,"path":"sprites/spr_enemy_wolf_idle_left/spr_enemy_wolf_idle_left.yy",},
+  ],
 }

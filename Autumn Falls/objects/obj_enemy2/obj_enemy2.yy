@@ -37,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_enemy2_template",
-    "path":"sprites/spr_enemy2_template/spr_enemy2_template.yy",
+    "name":"spr_enemy_wolf_idle_right",
+    "path":"sprites/spr_enemy_wolf_idle_right/spr_enemy_wolf_idle_right.yy",
   },
   "spriteMaskId":null,
   "visible":true,
