@@ -102,11 +102,24 @@ if (mouse_check_button(mb_right)) {
             sprite_index == spr_fox_idle_left || 
             sprite_index == spr_fox_jump_left) 
         {
+			sprite_index = spr_fox_bite_right_1;
             facing = -1;
         }
-
+		
+		// if facing right, right directed bite animation. 
+		//Prob getting cancelled out by idle, run or jump from ground animations
+		if (keyboard_check(right_key) || 
+            sprite_index == spr_fox_run_right || 
+            sprite_index == spr_fox_idle_right || 
+            sprite_index == spr_fox_jump_right) 
+        {
+			sprite_index = spr_fox_idle_right_1;
+			facing = 1;
+            
+        }
+		
        
-        var s = instance_create_depth(x + (facing * 35), y, -1000, obj_bite);
+        var s = instance_create_depth(x + (facing * 35), y, -1000, Object30);
         
         s.image_xscale = facing; 
 		audio_play_sound(snd_slash, 0, false);
