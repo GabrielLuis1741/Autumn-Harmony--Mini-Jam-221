@@ -28,4 +28,4 @@ attacktime = room_speed * 1.2;
 hp = 10;
 
 enemy_speed = 2;
-damage = 1;
+damage = 2;

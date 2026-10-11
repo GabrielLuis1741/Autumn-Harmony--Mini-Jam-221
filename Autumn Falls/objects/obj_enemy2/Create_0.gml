@@ -33,7 +33,7 @@ s_hit = function(_id, _damage) {
 //attack relevant variables (pulled from enemy 1)
 attackcount = 0
 attacktime = room_speed * 1.2;
-hp = 10;
+hp = 20;
 
 
 damage = 1;

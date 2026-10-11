@@ -29,7 +29,9 @@ dash_dir = 1;
 
 //leaf and stick objectives
 global.leaf_counter = 0;
+global.new_leaf_counter = 1;
 global.stick_counter = 0;
+global.new_stick_counter = 1;
 
 
 p_hit = function(_id, _damage) {
@@ -38,6 +40,6 @@ p_hit = function(_id, _damage) {
 };
 
 
-timer = 20;
+timer = 165;
 
 alarm[1] = room_speed * timer;

@@ -9,7 +9,7 @@ var on_ground = place_meeting(x, y + 1, par_wall);
 dash_cooldown = max(dash_cooldown - 1, 0);
 dash_timer = max(dash_timer - 1, 0);
 
-if (keyboard_check_pressed(vk_shift) && dash_cooldown <= 0) {
+if (mouse_check_button(mb_right) && dash_cooldown <= 0) {
     dash_timer = 8;
     dash_cooldown = 60;
     dash_dir = (move_x != 0) ? sign(move_x) : sign(image_xscale);
@@ -69,7 +69,18 @@ if (player_hp <= 0) {
 	
 }
 
+//heat tracking
 if (timer > 0) {
   
     timer -= delta_time / 1000000; 
+}
+
+if (global.leaf_counter == global.new_leaf_counter) {
+	global.new_leaf_counter++;
+	timer += 3.3 * delta_time / 10000;	
+}
+
+if (global.stick_counter == global.new_stick_counter) {
+	global.new_stick_counter++;
+	timer += 3.3 * delta_time / 10000;	
 }
