@@ -18,6 +18,7 @@ jump_speed = 4.05;  // was jspeed (1.35) * mspeed (3)
 mspeed = 3;
 
 // Health
+player_init_hp = 3;
 player_hp = 3;
 invincible = 0;
 
@@ -32,6 +33,8 @@ global.leaf_counter = 0;
 global.new_leaf_counter = 1;
 global.stick_counter = 0;
 global.new_stick_counter = 1;
+global.autumn_max = 9;
+global.winter_max = 5;
 
 
 p_hit = function(_id, _damage) {
@@ -39,7 +42,7 @@ p_hit = function(_id, _damage) {
     invincible = 1;
 };
 
-
+timer_init = 100;
 timer = 100;
 
 alarm[1] = room_speed * timer;

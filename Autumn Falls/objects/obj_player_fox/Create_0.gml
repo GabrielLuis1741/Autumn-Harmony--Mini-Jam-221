@@ -18,6 +18,7 @@ mspeed = 3;
 
 
 // Health
+player_init_hp = 18;
 player_hp = 18;
 invincible = 0;
 

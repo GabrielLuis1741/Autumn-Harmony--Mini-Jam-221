@@ -172,5 +172,5 @@ if (mouse_check_button(mb_left)) {
 
 // Lose condition
 if (player_hp <= 0) {
-    room_goto(rm_end_game);
+    room_goto(rm_game_over_winter);
 }
