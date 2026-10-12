@@ -38,8 +38,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite153",
-    "path":"sprites/Sprite153/Sprite153.yy",
+    "name":"spr_snow_ground",
+    "path":"sprites/spr_snow_ground/spr_snow_ground.yy",
   },
   "spriteMaskId":null,
   "visible":true,

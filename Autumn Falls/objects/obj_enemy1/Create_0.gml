@@ -20,6 +20,8 @@ s_hit = function(_id, _damage) {
 	//instance_destroy(_id);
 }
 
+
+ dir = -1;
  enemy_speed = 10
 // move_towards_point(room_width/2, room_height/2, enemy_speed)
 
