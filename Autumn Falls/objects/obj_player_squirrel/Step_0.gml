@@ -65,7 +65,7 @@ if (keyboard_check(right_key)){
 
 // Lose condition
 if (player_hp <= 0) {
-    room_goto(rm_end_game);
+    room_goto(rm_game_over_winter);
 	
 }
 
