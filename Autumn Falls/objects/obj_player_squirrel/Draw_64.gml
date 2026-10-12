@@ -18,42 +18,39 @@ if (room == rm_game_level1_squirrel) {
 	draw_text(800,70, string(global.leaf_counter) + "/" + string(global.autumn_max))
 	draw_text(915,70, string(global.stick_counter) + "/" + string(global.autumn_max))
 } else if (room == rm_game_winter_level_squirrel) {
-	draw_text(800,60, string(global.leaf_counter) + "/" + string(global.winter_max))
-	draw_text(915,70, string(global.stick_counter) + "/" + string(global.autumn_max))
+	draw_text(800,70, string(global.leaf_counter) + "/" + string(global.winter_max))
+	draw_text(915,70, string(global.stick_counter) + "/" + string(global.winter_max))
 };
 
 // draw_text(50, 700, "health:" + string(player_hp));
 
 if (global.leaf_counter == global.autumn_max && room == rm_game_level1_squirrel) {
-	draw_text(300, 100,"All leaves collected!");	
+	draw_sprite(spr_leafpopup,image_index, 550,150)
 	
 }
 
 if (global.stick_counter == global.autumn_max  && room == rm_game_level1_squirrel) {
-	draw_text(300, 50,"All sticks collected!");	
+	draw_sprite(spr_stickpopup,image_index, 550,150)
 	
 }
 
 if (global.leaf_counter == global.autumn_max && global.stick_counter == 9  && room == rm_game_level1_squirrel) {
-	draw_text (300, 0, "All objectives complete! Make it to the fox!!")
+	draw_sprite(spr_donepopup,image_index, 550,150)
 }
 
 //winter level
 
 if (global.leaf_counter == global.winter_max && room == rm_game_winter_level_squirrel) {
-	draw_text(300, 100,"All leaves collected!");	
+	draw_sprite(spr_leafpopup,image_index, 550,150)	
 	
 }
 
 if (global.stick_counter == global.winter_max  && room == rm_game_winter_level_squirrel) {
-	draw_text(300, 50,"All sticks collected!");	
+	draw_sprite(spr_stickpopup,image_index, 550,150)
 	
 }
 
-if (global.leaf_counter == global.winter_max && global.stick_counter == 5  && room == rm_game_winter_level_squirrel) {
-	draw_text (300, 0, "All objectives complete! Make it to the fox!!")
+if (global.leaf_counter == global.winter_max && global.stick_counter == global.winter_max  && room == rm_game_winter_level_squirrel) {
+	draw_sprite(spr_donepopup,image_index, 550,150)
 }
 
-// draw_set_colour(c_red);
-
-// draw_text(600, 200, "Heat:" + string(ceil(timer)));

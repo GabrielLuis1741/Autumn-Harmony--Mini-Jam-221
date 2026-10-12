@@ -65,8 +65,11 @@ if (keyboard_check(right_key)){
 
 // Lose condition
 if (player_hp <= 0) {
-    room_goto(rm_game_over_winter);
-	
+	if room == rm_game_level1_squirrel{
+    room_goto(rm_game_over_autumn);
+	} else if room == rm_game_winter_level_squirrel{
+		room_goto(rm_game_over_winter);
+	}
 }
 
 //heat tracking
